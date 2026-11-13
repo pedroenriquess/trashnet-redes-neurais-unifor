@@ -1,0 +1,19 @@
+# Ambientes virtuais e cache Python
+__pycache__/
+*.py[cod]
+*$py.class
+.ipynb_checkpoints/
+venv/
+env/
+
+# Dataset temporario do YOLO (pode ser recriado com splits.json e download do trashnet)
+data/yolo_dataset/
+
+# Arquivos de download e instaladores
+*.whl
+*.zip
+yolov8n-cls.pt
+
+# Caches de IDEs
+.vscode/
+.idea/

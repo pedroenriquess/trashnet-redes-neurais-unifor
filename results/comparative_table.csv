@@ -1,0 +1,7 @@
+Experimento,Modelo,Resolução,Pesos,Parâmetros,Tamanho (MB),Épocas,Tempo Total (s),Tempo/Época (s),Pico VRAM (MB),F1 Validação,Acurácia Teste,F1 Macro Teste
+1,MLP (128x96) Sem Pesos,128x96,Não,18941318,72.26,17,85.5,4.98,0.0,0.3733,0.3842,0.2938
+2,MLP (128x96) Com Pesos,128x96,Sim,18941318,72.26,25,125.1,4.98,0.0,0.1194,0.2842,0.1271
+3,CNN (128x96) Sem Pesos,128x96,Não,94470,0.37,28,376.2,13.43,0.0,0.628,0.6789,0.6484
+4,CNN (128x96) Com Pesos,128x96,Sim,94470,0.37,35,444.8,12.71,0.0,0.6646,0.6684,0.6303
+5,CNN (256x192) Sem Pesos,256x192,Não,94470,0.37,21,1092.4,52.02,0.0,0.5802,0.5789,0.5185
+6,CNN (512x384) Sem Pesos,512x384,Não,94470,0.37,28,6134.1,219.08,0.0,0.5939,0.5895,0.5402

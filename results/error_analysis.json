@@ -1,0 +1,38 @@
+[
+  {
+    "image_path": "C:\\Users\\ezequ\\Downloads\\dataset-resized\\dataset-resized\\plastic\\plastic9.jpg",
+    "true_class": "plastic",
+    "pred_class": "trash",
+    "confidence": 0.2997114360332489
+  },
+  {
+    "image_path": "C:\\Users\\ezequ\\Downloads\\dataset-resized\\dataset-resized\\plastic\\plastic238.jpg",
+    "true_class": "plastic",
+    "pred_class": "paper",
+    "confidence": 0.8688612580299377
+  },
+  {
+    "image_path": "C:\\Users\\ezequ\\Downloads\\dataset-resized\\dataset-resized\\metal\\metal405.jpg",
+    "true_class": "metal",
+    "pred_class": "trash",
+    "confidence": 0.7094394564628601
+  },
+  {
+    "image_path": "C:\\Users\\ezequ\\Downloads\\dataset-resized\\dataset-resized\\metal\\metal9.jpg",
+    "true_class": "metal",
+    "pred_class": "trash",
+    "confidence": 0.3416127860546112
+  },
+  {
+    "image_path": "C:\\Users\\ezequ\\Downloads\\dataset-resized\\dataset-resized\\glass\\glass501.jpg",
+    "true_class": "glass",
+    "pred_class": "plastic",
+    "confidence": 0.8733090162277222
+  },
+  {
+    "image_path": "C:\\Users\\ezequ\\Downloads\\dataset-resized\\dataset-resized\\metal\\metal90.jpg",
+    "true_class": "metal",
+    "pred_class": "paper",
+    "confidence": 0.37596243619918823
+  }
+]

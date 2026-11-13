@@ -1,0 +1,881 @@
+{
+  "id": 4,
+  "name": "CNN (128x96) Com Pesos",
+  "model_type": "cnn",
+  "resolution": "128x96",
+  "resolution_tuple": [
+    128,
+    96
+  ],
+  "use_class_weights": true,
+  "parameters": 94470,
+  "model_size_mb": 0.36971282958984375,
+  "epochs_trained": 35,
+  "best_epoch": 29,
+  "best_val_f1": 0.6646246126780798,
+  "best_val_loss": 0.8842195697069797,
+  "total_time_seconds": 444.7681927999947,
+  "avg_epoch_time_seconds": 12.706491288569357,
+  "peak_gpu_mem_mb": 0.0,
+  "test_accuracy": 0.6684210526315789,
+  "test_f1_macro": 0.630306097626359,
+  "test_report": {
+    "glass": {
+      "precision": 0.7,
+      "recall": 0.5526315789473685,
+      "f1-score": 0.6176470588235294,
+      "support": 76.0
+    },
+    "paper": {
+      "precision": 0.6869565217391305,
+      "recall": 0.8876404494382022,
+      "f1-score": 0.7745098039215687,
+      "support": 89.0
+    },
+    "cardboard": {
+      "precision": 0.9215686274509803,
+      "recall": 0.7833333333333333,
+      "f1-score": 0.8468468468468469,
+      "support": 60.0
+    },
+    "plastic": {
+      "precision": 0.654320987654321,
+      "recall": 0.726027397260274,
+      "f1-score": 0.6883116883116883,
+      "support": 73.0
+    },
+    "metal": {
+      "precision": 0.8421052631578947,
+      "recall": 0.25806451612903225,
+      "f1-score": 0.3950617283950617,
+      "support": 62.0
+    },
+    "trash": {
+      "precision": 0.3148148148148148,
+      "recall": 0.85,
+      "f1-score": 0.4594594594594595,
+      "support": 20.0
+    },
+    "accuracy": 0.6684210526315789,
+    "macro avg": {
+      "precision": 0.6866277024695235,
+      "recall": 0.6762828791847015,
+      "f1-score": 0.630306097626359,
+      "support": 380.0
+    },
+    "weighted avg": {
+      "precision": 0.726067112612349,
+      "recall": 0.6684210526315789,
+      "f1-score": 0.6595082353338287,
+      "support": 380.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      42,
+      6,
+      1,
+      13,
+      2,
+      12
+    ],
+    [
+      3,
+      79,
+      2,
+      2,
+      0,
+      3
+    ],
+    [
+      0,
+      7,
+      47,
+      2,
+      0,
+      4
+    ],
+    [
+      2,
+      8,
+      0,
+      53,
+      1,
+      9
+    ],
+    [
+      12,
+      13,
+      1,
+      11,
+      16,
+      9
+    ],
+    [
+      1,
+      2,
+      0,
+      0,
+      0,
+      17
+    ]
+  ],
+  "errors": [
+    {
+      "image_path": "C:\\Users\\ezequ\\Downloads\\dataset-resized\\dataset-resized\\plastic\\plastic9.jpg",
+      "true_class": "plastic",
+      "pred_class": "trash",
+      "confidence": 0.2997114360332489
+    },
+    {
+      "image_path": "C:\\Users\\ezequ\\Downloads\\dataset-resized\\dataset-resized\\plastic\\plastic238.jpg",
+      "true_class": "plastic",
+      "pred_class": "paper",
+      "confidence": 0.8688612580299377
+    },
+    {
+      "image_path": "C:\\Users\\ezequ\\Downloads\\dataset-resized\\dataset-resized\\metal\\metal405.jpg",
+      "true_class": "metal",
+      "pred_class": "trash",
+      "confidence": 0.7094394564628601
+    },
+    {
+      "image_path": "C:\\Users\\ezequ\\Downloads\\dataset-resized\\dataset-resized\\metal\\metal9.jpg",
+      "true_class": "metal",
+      "pred_class": "trash",
+      "confidence": 0.3416127860546112
+    },
+    {
+      "image_path": "C:\\Users\\ezequ\\Downloads\\dataset-resized\\dataset-resized\\glass\\glass501.jpg",
+      "true_class": "glass",
+      "pred_class": "plastic",
+      "confidence": 0.8733090162277222
+    },
+    {
+      "image_path": "C:\\Users\\ezequ\\Downloads\\dataset-resized\\dataset-resized\\metal\\metal90.jpg",
+      "true_class": "metal",
+      "pred_class": "paper",
+      "confidence": 0.37596243619918823
+    },
+    {
+      "image_path": "C:\\Users\\ezequ\\Downloads\\dataset-resized\\dataset-resized\\paper\\paper166.jpg",
+      "true_class": "paper",
+      "pred_class": "cardboard",
+      "confidence": 0.7946887612342834
+    },
+    {
+      "image_path": "C:\\Users\\ezequ\\Downloads\\dataset-resized\\dataset-resized\\glass\\glass235.jpg",
+      "true_class": "glass",
+      "pred_class": "trash",
+      "confidence": 0.3694165050983429
+    },
+    {
+      "image_path": "C:\\Users\\ezequ\\Downloads\\dataset-resized\\dataset-resized\\plastic\\plastic457.jpg",
+      "true_class": "plastic",
+      "pred_class": "trash",
+      "confidence": 0.6852680444717407
+    },
+    {
+      "image_path": "C:\\Users\\ezequ\\Downloads\\dataset-resized\\dataset-resized\\plastic\\plastic102.jpg",
+      "true_class": "plastic",
+      "pred_class": "metal",
+      "confidence": 0.38902023434638977
+    },
+    {
+      "image_path": "C:\\Users\\ezequ\\Downloads\\dataset-resized\\dataset-resized\\plastic\\plastic147.jpg",
+      "true_class": "plastic",
+      "pred_class": "glass",
+      "confidence": 0.39858534932136536
+    },
+    {
+      "image_path": "C:\\Users\\ezequ\\Downloads\\dataset-resized\\dataset-resized\\paper\\paper594.jpg",
+      "true_class": "paper",
+      "pred_class": "glass",
+      "confidence": 0.36653614044189453
+    },
+    {
+      "image_path": "C:\\Users\\ezequ\\Downloads\\dataset-resized\\dataset-resized\\metal\\metal290.jpg",
+      "true_class": "metal",
+      "pred_class": "trash",
+      "confidence": 0.7011197209358215
+    },
+    {
+      "image_path": "C:\\Users\\ezequ\\Downloads\\dataset-resized\\dataset-resized\\metal\\metal155.jpg",
+      "true_class": "metal",
+      "pred_class": "plastic",
+      "confidence": 0.3202820122241974
+    },
+    {
+      "image_path": "C:\\Users\\ezequ\\Downloads\\dataset-resized\\dataset-resized\\glass\\glass142.jpg",
+      "true_class": "glass",
+      "pred_class": "metal",
+      "confidence": 0.5001634955406189
+    },
+    {
+      "image_path": "C:\\Users\\ezequ\\Downloads\\dataset-resized\\dataset-resized\\metal\\metal97.jpg",
+      "true_class": "metal",
+      "pred_class": "paper",
+      "confidence": 0.7489887475967407
+    },
+    {
+      "image_path": "C:\\Users\\ezequ\\Downloads\\dataset-resized\\dataset-resized\\glass\\glass341.jpg",
+      "true_class": "glass",
+      "pred_class": "plastic",
+      "confidence": 0.7587011456489563
+    },
+    {
+      "image_path": "C:\\Users\\ezequ\\Downloads\\dataset-resized\\dataset-resized\\plastic\\plastic37.jpg",
+      "true_class": "plastic",
+      "pred_class": "paper",
+      "confidence": 0.7270069718360901
+    },
+    {
+      "image_path": "C:\\Users\\ezequ\\Downloads\\dataset-resized\\dataset-resized\\metal\\metal294.jpg",
+      "true_class": "metal",
+      "pred_class": "trash",
+      "confidence": 0.36352723836898804
+    },
+    {
+      "image_path": "C:\\Users\\ezequ\\Downloads\\dataset-resized\\dataset-resized\\metal\\metal151.jpg",
+      "true_class": "metal",
+      "pred_class": "glass",
+      "confidence": 0.378945529460907
+    },
+    {
+      "image_path": "C:\\Users\\ezequ\\Downloads\\dataset-resized\\dataset-resized\\glass\\glass488.jpg",
+      "true_class": "glass",
+      "pred_class": "trash",
+      "confidence": 0.3922615647315979
+    },
+    {
+      "image_path": "C:\\Users\\ezequ\\Downloads\\dataset-resized\\dataset-resized\\metal\\metal218.jpg",
+      "true_class": "metal",
+      "pred_class": "glass",
+      "confidence": 0.484841912984848
+    },
+    {
+      "image_path": "C:\\Users\\ezequ\\Downloads\\dataset-resized\\dataset-resized\\plastic\\plastic149.jpg",
+      "true_class": "plastic",
+      "pred_class": "trash",
+      "confidence": 0.3145101070404053
+    },
+    {
+      "image_path": "C:\\Users\\ezequ\\Downloads\\dataset-resized\\dataset-resized\\metal\\metal316.jpg",
+      "true_class": "metal",
+      "pred_class": "plastic",
+      "confidence": 0.3825531601905823
+    },
+    {
+      "image_path": "C:\\Users\\ezequ\\Downloads\\dataset-resized\\dataset-resized\\metal\\metal278.jpg",
+      "true_class": "metal",
+      "pred_class": "plastic",
+      "confidence": 0.7137511372566223
+    },
+    {
+      "image_path": "C:\\Users\\ezequ\\Downloads\\dataset-resized\\dataset-resized\\glass\\glass96.jpg",
+      "true_class": "glass",
+      "pred_class": "plastic",
+      "confidence": 0.32836341857910156
+    },
+    {
+      "image_path": "C:\\Users\\ezequ\\Downloads\\dataset-resized\\dataset-resized\\metal\\metal182.jpg",
+      "true_class": "metal",
+      "pred_class": "glass",
+      "confidence": 0.5701488256454468
+    },
+    {
+      "image_path": "C:\\Users\\ezequ\\Downloads\\dataset-resized\\dataset-resized\\cardboard\\cardboard119.jpg",
+      "true_class": "cardboard",
+      "pred_class": "paper",
+      "confidence": 0.34925106167793274
+    },
+    {
+      "image_path": "C:\\Users\\ezequ\\Downloads\\dataset-resized\\dataset-resized\\metal\\metal272.jpg",
+      "true_class": "metal",
+      "pred_class": "paper",
+      "confidence": 0.33426633477211
+    },
+    {
+      "image_path": "C:\\Users\\ezequ\\Downloads\\dataset-resized\\dataset-resized\\cardboard\\cardboard248.jpg",
+      "true_class": "cardboard",
+      "pred_class": "paper",
+      "confidence": 0.5105218887329102
+    },
+    {
+      "image_path": "C:\\Users\\ezequ\\Downloads\\dataset-resized\\dataset-resized\\glass\\glass157.jpg",
+      "true_class": "glass",
+      "pred_class": "paper",
+      "confidence": 0.36240777373313904
+    },
+    {
+      "image_path": "C:\\Users\\ezequ\\Downloads\\dataset-resized\\dataset-resized\\glass\\glass446.jpg",
+      "true_class": "glass",
+      "pred_class": "cardboard",
+      "confidence": 0.28819993138313293
+    },
+    {
+      "image_path": "C:\\Users\\ezequ\\Downloads\\dataset-resized\\dataset-resized\\glass\\glass332.jpg",
+      "true_class": "glass",
+      "pred_class": "trash",
+      "confidence": 0.388933390378952
+    },
+    {
+      "image_path": "C:\\Users\\ezequ\\Downloads\\dataset-resized\\dataset-resized\\glass\\glass98.jpg",
+      "true_class": "glass",
+      "pred_class": "trash",
+      "confidence": 0.3752891719341278
+    },
+    {
+      "image_path": "C:\\Users\\ezequ\\Downloads\\dataset-resized\\dataset-resized\\cardboard\\cardboard269.jpg",
+      "true_class": "cardboard",
+      "pred_class": "paper",
+      "confidence": 0.6812214255332947
+    },
+    {
+      "image_path": "C:\\Users\\ezequ\\Downloads\\dataset-resized\\dataset-resized\\paper\\paper294.jpg",
+      "true_class": "paper",
+      "pred_class": "trash",
+      "confidence": 0.4664377272129059
+    },
+    {
+      "image_path": "C:\\Users\\ezequ\\Downloads\\dataset-resized\\dataset-resized\\plastic\\plastic153.jpg",
+      "true_class": "plastic",
+      "pred_class": "glass",
+      "confidence": 0.31679195165634155
+    },
+    {
+      "image_path": "C:\\Users\\ezequ\\Downloads\\dataset-resized\\dataset-resized\\cardboard\\cardboard385.jpg",
+      "true_class": "cardboard",
+      "pred_class": "paper",
+      "confidence": 0.7209342122077942
+    },
+    {
+      "image_path": "C:\\Users\\ezequ\\Downloads\\dataset-resized\\dataset-resized\\plastic\\plastic231.jpg",
+      "true_class": "plastic",
+      "pred_class": "trash",
+      "confidence": 0.9052392840385437
+    },
+    {
+      "image_path": "C:\\Users\\ezequ\\Downloads\\dataset-resized\\dataset-resized\\plastic\\plastic69.jpg",
+      "true_class": "plastic",
+      "pred_class": "paper",
+      "confidence": 0.34742245078086853
+    },
+    {
+      "image_path": "C:\\Users\\ezequ\\Downloads\\dataset-resized\\dataset-resized\\plastic\\plastic163.jpg",
+      "true_class": "plastic",
+      "pred_class": "trash",
+      "confidence": 0.34040889143943787
+    },
+    {
+      "image_path": "C:\\Users\\ezequ\\Downloads\\dataset-resized\\dataset-resized\\glass\\glass375.jpg",
+      "true_class": "glass",
+      "pred_class": "plastic",
+      "confidence": 0.7261593341827393
+    },
+    {
+      "image_path": "C:\\Users\\ezequ\\Downloads\\dataset-resized\\dataset-resized\\metal\\metal37.jpg",
+      "true_class": "metal",
+      "pred_class": "plastic",
+      "confidence": 0.9321901798248291
+    },
+    {
+      "image_path": "C:\\Users\\ezequ\\Downloads\\dataset-resized\\dataset-resized\\metal\\metal1.jpg",
+      "true_class": "metal",
+      "pred_class": "paper",
+      "confidence": 0.607059895992279
+    },
+    {
+      "image_path": "C:\\Users\\ezequ\\Downloads\\dataset-resized\\dataset-resized\\metal\\metal227.jpg",
+      "true_class": "metal",
+      "pred_class": "paper",
+      "confidence": 0.5570175647735596
+    },
+    {
+      "image_path": "C:\\Users\\ezequ\\Downloads\\dataset-resized\\dataset-resized\\plastic\\plastic466.jpg",
+      "true_class": "plastic",
+      "pred_class": "paper",
+      "confidence": 0.6998523473739624
+    },
+    {
+      "image_path": "C:\\Users\\ezequ\\Downloads\\dataset-resized\\dataset-resized\\glass\\glass409.jpg",
+      "true_class": "glass",
+      "pred_class": "paper",
+      "confidence": 0.5177189707756042
+    },
+    {
+      "image_path": "C:\\Users\\ezequ\\Downloads\\dataset-resized\\dataset-resized\\plastic\\plastic94.jpg",
+      "true_class": "plastic",
+      "pred_class": "paper",
+      "confidence": 0.3120141625404358
+    },
+    {
+      "image_path": "C:\\Users\\ezequ\\Downloads\\dataset-resized\\dataset-resized\\glass\\glass52.jpg",
+      "true_class": "glass",
+      "pred_class": "paper",
+      "confidence": 0.34151798486709595
+    },
+    {
+      "image_path": "C:\\Users\\ezequ\\Downloads\\dataset-resized\\dataset-resized\\metal\\metal24.jpg",
+      "true_class": "metal",
+      "pred_class": "trash",
+      "confidence": 0.49762335419654846
+    },
+    {
+      "image_path": "C:\\Users\\ezequ\\Downloads\\dataset-resized\\dataset-resized\\paper\\paper201.jpg",
+      "true_class": "paper",
+      "pred_class": "trash",
+      "confidence": 0.3788582384586334
+    },
+    {
+      "image_path": "C:\\Users\\ezequ\\Downloads\\dataset-resized\\dataset-resized\\glass\\glass426.jpg",
+      "true_class": "glass",
+      "pred_class": "plastic",
+      "confidence": 0.7083668112754822
+    },
+    {
+      "image_path": "C:\\Users\\ezequ\\Downloads\\dataset-resized\\dataset-resized\\glass\\glass75.jpg",
+      "true_class": "glass",
+      "pred_class": "trash",
+      "confidence": 0.4181987941265106
+    },
+    {
+      "image_path": "C:\\Users\\ezequ\\Downloads\\dataset-resized\\dataset-resized\\metal\\metal298.jpg",
+      "true_class": "metal",
+      "pred_class": "trash",
+      "confidence": 0.47488296031951904
+    },
+    {
+      "image_path": "C:\\Users\\ezequ\\Downloads\\dataset-resized\\dataset-resized\\metal\\metal198.jpg",
+      "true_class": "metal",
+      "pred_class": "plastic",
+      "confidence": 0.2971749007701874
+    },
+    {
+      "image_path": "C:\\Users\\ezequ\\Downloads\\dataset-resized\\dataset-resized\\plastic\\plastic359.jpg",
+      "true_class": "plastic",
+      "pred_class": "trash",
+      "confidence": 0.30585962533950806
+    },
+    {
+      "image_path": "C:\\Users\\ezequ\\Downloads\\dataset-resized\\dataset-resized\\metal\\metal395.jpg",
+      "true_class": "metal",
+      "pred_class": "glass",
+      "confidence": 0.30475157499313354
+    },
+    {
+      "image_path": "C:\\Users\\ezequ\\Downloads\\dataset-resized\\dataset-resized\\glass\\glass195.jpg",
+      "true_class": "glass",
+      "pred_class": "trash",
+      "confidence": 0.4248485267162323
+    },
+    {
+      "image_path": "C:\\Users\\ezequ\\Downloads\\dataset-resized\\dataset-resized\\plastic\\plastic139.jpg",
+      "true_class": "plastic",
+      "pred_class": "trash",
+      "confidence": 0.5827004909515381
+    },
+    {
+      "image_path": "C:\\Users\\ezequ\\Downloads\\dataset-resized\\dataset-resized\\cardboard\\cardboard148.jpg",
+      "true_class": "cardboard",
+      "pred_class": "trash",
+      "confidence": 0.6632242202758789
+    },
+    {
+      "image_path": "C:\\Users\\ezequ\\Downloads\\dataset-resized\\dataset-resized\\metal\\metal307.jpg",
+      "true_class": "metal",
+      "pred_class": "trash",
+      "confidence": 0.40501323342323303
+    },
+    {
+      "image_path": "C:\\Users\\ezequ\\Downloads\\dataset-resized\\dataset-resized\\glass\\glass117.jpg",
+      "true_class": "glass",
+      "pred_class": "plastic",
+      "confidence": 0.47785985469818115
+    },
+    {
+      "image_path": "C:\\Users\\ezequ\\Downloads\\dataset-resized\\dataset-resized\\cardboard\\cardboard127.jpg",
+      "true_class": "cardboard",
+      "pred_class": "plastic",
+      "confidence": 0.2772694528102875
+    },
+    {
+      "image_path": "C:\\Users\\ezequ\\Downloads\\dataset-resized\\dataset-resized\\metal\\metal93.jpg",
+      "true_class": "metal",
+      "pred_class": "glass",
+      "confidence": 0.6529936790466309
+    },
+    {
+      "image_path": "C:\\Users\\ezequ\\Downloads\\dataset-resized\\dataset-resized\\metal\\metal175.jpg",
+      "true_class": "metal",
+      "pred_class": "paper",
+      "confidence": 0.5964155793190002
+    },
+    {
+      "image_path": "C:\\Users\\ezequ\\Downloads\\dataset-resized\\dataset-resized\\glass\\glass102.jpg",
+      "true_class": "glass",
+      "pred_class": "plastic",
+      "confidence": 0.3839316666126251
+    },
+    {
+      "image_path": "C:\\Users\\ezequ\\Downloads\\dataset-resized\\dataset-resized\\glass\\glass41.jpg",
+      "true_class": "glass",
+      "pred_class": "trash",
+      "confidence": 0.3447784185409546
+    },
+    {
+      "image_path": "C:\\Users\\ezequ\\Downloads\\dataset-resized\\dataset-resized\\metal\\metal51.jpg",
+      "true_class": "metal",
+      "pred_class": "plastic",
+      "confidence": 0.39338958263397217
+    },
+    {
+      "image_path": "C:\\Users\\ezequ\\Downloads\\dataset-resized\\dataset-resized\\metal\\metal203.jpg",
+      "true_class": "metal",
+      "pred_class": "paper",
+      "confidence": 0.5887995362281799
+    },
+    {
+      "image_path": "C:\\Users\\ezequ\\Downloads\\dataset-resized\\dataset-resized\\cardboard\\cardboard124.jpg",
+      "true_class": "cardboard",
+      "pred_class": "trash",
+      "confidence": 0.2164284586906433
+    },
+    {
+      "image_path": "C:\\Users\\ezequ\\Downloads\\dataset-resized\\dataset-resized\\metal\\metal284.jpg",
+      "true_class": "metal",
+      "pred_class": "glass",
+      "confidence": 0.29210349917411804
+    },
+    {
+      "image_path": "C:\\Users\\ezequ\\Downloads\\dataset-resized\\dataset-resized\\metal\\metal62.jpg",
+      "true_class": "metal",
+      "pred_class": "cardboard",
+      "confidence": 0.478020578622818
+    },
+    {
+      "image_path": "C:\\Users\\ezequ\\Downloads\\dataset-resized\\dataset-resized\\glass\\glass336.jpg",
+      "true_class": "glass",
+      "pred_class": "paper",
+      "confidence": 0.5841735601425171
+    },
+    {
+      "image_path": "C:\\Users\\ezequ\\Downloads\\dataset-resized\\dataset-resized\\metal\\metal297.jpg",
+      "true_class": "metal",
+      "pred_class": "glass",
+      "confidence": 0.6125531792640686
+    },
+    {
+      "image_path": "C:\\Users\\ezequ\\Downloads\\dataset-resized\\dataset-resized\\glass\\glass87.jpg",
+      "true_class": "glass",
+      "pred_class": "trash",
+      "confidence": 0.352337509393692
+    },
+    {
+      "image_path": "C:\\Users\\ezequ\\Downloads\\dataset-resized\\dataset-resized\\plastic\\plastic79.jpg",
+      "true_class": "plastic",
+      "pred_class": "trash",
+      "confidence": 0.6973527669906616
+    },
+    {
+      "image_path": "C:\\Users\\ezequ\\Downloads\\dataset-resized\\dataset-resized\\plastic\\plastic364.jpg",
+      "true_class": "plastic",
+      "pred_class": "paper",
+      "confidence": 0.98003089427948
+    },
+    {
+      "image_path": "C:\\Users\\ezequ\\Downloads\\dataset-resized\\dataset-resized\\cardboard\\cardboard132.jpg",
+      "true_class": "cardboard",
+      "pred_class": "paper",
+      "confidence": 0.4330984652042389
+    },
+    {
+      "image_path": "C:\\Users\\ezequ\\Downloads\\dataset-resized\\dataset-resized\\glass\\glass135.jpg",
+      "true_class": "glass",
+      "pred_class": "paper",
+      "confidence": 0.339871346950531
+    },
+    {
+      "image_path": "C:\\Users\\ezequ\\Downloads\\dataset-resized\\dataset-resized\\glass\\glass27.jpg",
+      "true_class": "glass",
+      "pred_class": "metal",
+      "confidence": 0.6658302545547485
+    },
+    {
+      "image_path": "C:\\Users\\ezequ\\Downloads\\dataset-resized\\dataset-resized\\glass\\glass402.jpg",
+      "true_class": "glass",
+      "pred_class": "trash",
+      "confidence": 0.59556645154953
+    },
+    {
+      "image_path": "C:\\Users\\ezequ\\Downloads\\dataset-resized\\dataset-resized\\metal\\metal179.jpg",
+      "true_class": "metal",
+      "pred_class": "glass",
+      "confidence": 0.5458205938339233
+    },
+    {
+      "image_path": "C:\\Users\\ezequ\\Downloads\\dataset-resized\\dataset-resized\\plastic\\plastic461.jpg",
+      "true_class": "plastic",
+      "pred_class": "paper",
+      "confidence": 0.5653244853019714
+    },
+    {
+      "image_path": "C:\\Users\\ezequ\\Downloads\\dataset-resized\\dataset-resized\\glass\\glass498.jpg",
+      "true_class": "glass",
+      "pred_class": "plastic",
+      "confidence": 0.6134932041168213
+    },
+    {
+      "image_path": "C:\\Users\\ezequ\\Downloads\\dataset-resized\\dataset-resized\\cardboard\\cardboard380.jpg",
+      "true_class": "cardboard",
+      "pred_class": "trash",
+      "confidence": 0.4587162435054779
+    },
+    {
+      "image_path": "C:\\Users\\ezequ\\Downloads\\dataset-resized\\dataset-resized\\trash\\trash92.jpg",
+      "true_class": "trash",
+      "pred_class": "paper",
+      "confidence": 0.6425409317016602
+    },
+    {
+      "image_path": "C:\\Users\\ezequ\\Downloads\\dataset-resized\\dataset-resized\\glass\\glass148.jpg",
+      "true_class": "glass",
+      "pred_class": "paper",
+      "confidence": 0.4011595547199249
+    },
+    {
+      "image_path": "C:\\Users\\ezequ\\Downloads\\dataset-resized\\dataset-resized\\glass\\glass499.jpg",
+      "true_class": "glass",
+      "pred_class": "plastic",
+      "confidence": 0.8611369729042053
+    },
+    {
+      "image_path": "C:\\Users\\ezequ\\Downloads\\dataset-resized\\dataset-resized\\glass\\glass188.jpg",
+      "true_class": "glass",
+      "pred_class": "trash",
+      "confidence": 0.35437148809432983
+    },
+    {
+      "image_path": "C:\\Users\\ezequ\\Downloads\\dataset-resized\\dataset-resized\\metal\\metal347.jpg",
+      "true_class": "metal",
+      "pred_class": "paper",
+      "confidence": 0.5615454912185669
+    },
+    {
+      "image_path": "C:\\Users\\ezequ\\Downloads\\dataset-resized\\dataset-resized\\cardboard\\cardboard219.jpg",
+      "true_class": "cardboard",
+      "pred_class": "paper",
+      "confidence": 0.4944131374359131
+    },
+    {
+      "image_path": "C:\\Users\\ezequ\\Downloads\\dataset-resized\\dataset-resized\\metal\\metal18.jpg",
+      "true_class": "metal",
+      "pred_class": "plastic",
+      "confidence": 0.37533625960350037
+    },
+    {
+      "image_path": "C:\\Users\\ezequ\\Downloads\\dataset-resized\\dataset-resized\\glass\\glass249.jpg",
+      "true_class": "glass",
+      "pred_class": "plastic",
+      "confidence": 0.42692384123802185
+    },
+    {
+      "image_path": "C:\\Users\\ezequ\\Downloads\\dataset-resized\\dataset-resized\\trash\\trash89.jpg",
+      "true_class": "trash",
+      "pred_class": "paper",
+      "confidence": 0.5018268823623657
+    },
+    {
+      "image_path": "C:\\Users\\ezequ\\Downloads\\dataset-resized\\dataset-resized\\metal\\metal391.jpg",
+      "true_class": "metal",
+      "pred_class": "glass",
+      "confidence": 0.4990721344947815
+    },
+    {
+      "image_path": "C:\\Users\\ezequ\\Downloads\\dataset-resized\\dataset-resized\\glass\\glass19.jpg",
+      "true_class": "glass",
+      "pred_class": "plastic",
+      "confidence": 0.34878629446029663
+    },
+    {
+      "image_path": "C:\\Users\\ezequ\\Downloads\\dataset-resized\\dataset-resized\\glass\\glass28.jpg",
+      "true_class": "glass",
+      "pred_class": "trash",
+      "confidence": 0.5113232135772705
+    },
+    {
+      "image_path": "C:\\Users\\ezequ\\Downloads\\dataset-resized\\dataset-resized\\metal\\metal309.jpg",
+      "true_class": "metal",
+      "pred_class": "trash",
+      "confidence": 0.4081055521965027
+    },
+    {
+      "image_path": "C:\\Users\\ezequ\\Downloads\\dataset-resized\\dataset-resized\\trash\\trash117.jpg",
+      "true_class": "trash",
+      "pred_class": "glass",
+      "confidence": 0.4787198603153229
+    },
+    {
+      "image_path": "C:\\Users\\ezequ\\Downloads\\dataset-resized\\dataset-resized\\paper\\paper370.jpg",
+      "true_class": "paper",
+      "pred_class": "glass",
+      "confidence": 0.32491689920425415
+    },
+    {
+      "image_path": "C:\\Users\\ezequ\\Downloads\\dataset-resized\\dataset-resized\\metal\\metal237.jpg",
+      "true_class": "metal",
+      "pred_class": "plastic",
+      "confidence": 0.7259488105773926
+    },
+    {
+      "image_path": "C:\\Users\\ezequ\\Downloads\\dataset-resized\\dataset-resized\\plastic\\plastic416.jpg",
+      "true_class": "plastic",
+      "pred_class": "trash",
+      "confidence": 0.48032426834106445
+    },
+    {
+      "image_path": "C:\\Users\\ezequ\\Downloads\\dataset-resized\\dataset-resized\\glass\\glass463.jpg",
+      "true_class": "glass",
+      "pred_class": "plastic",
+      "confidence": 0.5542948842048645
+    },
+    {
+      "image_path": "C:\\Users\\ezequ\\Downloads\\dataset-resized\\dataset-resized\\plastic\\plastic354.jpg",
+      "true_class": "plastic",
+      "pred_class": "paper",
+      "confidence": 0.7515956163406372
+    },
+    {
+      "image_path": "C:\\Users\\ezequ\\Downloads\\dataset-resized\\dataset-resized\\metal\\metal105.jpg",
+      "true_class": "metal",
+      "pred_class": "glass",
+      "confidence": 0.6073180437088013
+    },
+    {
+      "image_path": "C:\\Users\\ezequ\\Downloads\\dataset-resized\\dataset-resized\\cardboard\\cardboard33.jpg",
+      "true_class": "cardboard",
+      "pred_class": "plastic",
+      "confidence": 0.862040102481842
+    },
+    {
+      "image_path": "C:\\Users\\ezequ\\Downloads\\dataset-resized\\dataset-resized\\glass\\glass61.jpg",
+      "true_class": "glass",
+      "pred_class": "plastic",
+      "confidence": 0.4825243055820465
+    },
+    {
+      "image_path": "C:\\Users\\ezequ\\Downloads\\dataset-resized\\dataset-resized\\metal\\metal376.jpg",
+      "true_class": "metal",
+      "pred_class": "glass",
+      "confidence": 0.75738525390625
+    },
+    {
+      "image_path": "C:\\Users\\ezequ\\Downloads\\dataset-resized\\dataset-resized\\metal\\metal360.jpg",
+      "true_class": "metal",
+      "pred_class": "glass",
+      "confidence": 0.37528249621391296
+    },
+    {
+      "image_path": "C:\\Users\\ezequ\\Downloads\\dataset-resized\\dataset-resized\\cardboard\\cardboard277.jpg",
+      "true_class": "cardboard",
+      "pred_class": "paper",
+      "confidence": 0.5655477046966553
+    },
+    {
+      "image_path": "C:\\Users\\ezequ\\Downloads\\dataset-resized\\dataset-resized\\metal\\metal215.jpg",
+      "true_class": "metal",
+      "pred_class": "paper",
+      "confidence": 0.3607684075832367
+    },
+    {
+      "image_path": "C:\\Users\\ezequ\\Downloads\\dataset-resized\\dataset-resized\\metal\\metal82.jpg",
+      "true_class": "metal",
+      "pred_class": "trash",
+      "confidence": 0.6977292895317078
+    },
+    {
+      "image_path": "C:\\Users\\ezequ\\Downloads\\dataset-resized\\dataset-resized\\paper\\paper304.jpg",
+      "true_class": "paper",
+      "pred_class": "plastic",
+      "confidence": 0.3847804665565491
+    },
+    {
+      "image_path": "C:\\Users\\ezequ\\Downloads\\dataset-resized\\dataset-resized\\metal\\metal13.jpg",
+      "true_class": "metal",
+      "pred_class": "plastic",
+      "confidence": 0.45504337549209595
+    },
+    {
+      "image_path": "C:\\Users\\ezequ\\Downloads\\dataset-resized\\dataset-resized\\paper\\paper116.jpg",
+      "true_class": "paper",
+      "pred_class": "trash",
+      "confidence": 0.33516770601272583
+    },
+    {
+      "image_path": "C:\\Users\\ezequ\\Downloads\\dataset-resized\\dataset-resized\\paper\\paper491.jpg",
+      "true_class": "paper",
+      "pred_class": "cardboard",
+      "confidence": 0.4146321415901184
+    },
+    {
+      "image_path": "C:\\Users\\ezequ\\Downloads\\dataset-resized\\dataset-resized\\metal\\metal164.jpg",
+      "true_class": "metal",
+      "pred_class": "paper",
+      "confidence": 0.34904998540878296
+    },
+    {
+      "image_path": "C:\\Users\\ezequ\\Downloads\\dataset-resized\\dataset-resized\\cardboard\\cardboard81.jpg",
+      "true_class": "cardboard",
+      "pred_class": "trash",
+      "confidence": 0.46797603368759155
+    },
+    {
+      "image_path": "C:\\Users\\ezequ\\Downloads\\dataset-resized\\dataset-resized\\metal\\metal187.jpg",
+      "true_class": "metal",
+      "pred_class": "paper",
+      "confidence": 0.7118293642997742
+    },
+    {
+      "image_path": "C:\\Users\\ezequ\\Downloads\\dataset-resized\\dataset-resized\\metal\\metal109.jpg",
+      "true_class": "metal",
+      "pred_class": "plastic",
+      "confidence": 0.500370442867279
+    },
+    {
+      "image_path": "C:\\Users\\ezequ\\Downloads\\dataset-resized\\dataset-resized\\paper\\paper508.jpg",
+      "true_class": "paper",
+      "pred_class": "plastic",
+      "confidence": 0.42337730526924133
+    },
+    {
+      "image_path": "C:\\Users\\ezequ\\Downloads\\dataset-resized\\dataset-resized\\glass\\glass393.jpg",
+      "true_class": "glass",
+      "pred_class": "trash",
+      "confidence": 0.3622961640357971
+    },
+    {
+      "image_path": "C:\\Users\\ezequ\\Downloads\\dataset-resized\\dataset-resized\\metal\\metal115.jpg",
+      "true_class": "metal",
+      "pred_class": "paper",
+      "confidence": 0.3713074326515198
+    },
+    {
+      "image_path": "C:\\Users\\ezequ\\Downloads\\dataset-resized\\dataset-resized\\metal\\metal214.jpg",
+      "true_class": "metal",
+      "pred_class": "paper",
+      "confidence": 0.2555476725101471
+    },
+    {
+      "image_path": "C:\\Users\\ezequ\\Downloads\\dataset-resized\\dataset-resized\\metal\\metal400.jpg",
+      "true_class": "metal",
+      "pred_class": "plastic",
+      "confidence": 0.5630035996437073
+    },
+    {
+      "image_path": "C:\\Users\\ezequ\\Downloads\\dataset-resized\\dataset-resized\\paper\\paper391.jpg",
+      "true_class": "paper",
+      "pred_class": "glass",
+      "confidence": 0.30088120698928833
+    }
+  ]
+}
