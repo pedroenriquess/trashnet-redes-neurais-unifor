@@ -14,7 +14,11 @@ IDX_TO_CLASS = {i: c for i, c in enumerate(CLASS_NAMES)}
 DATASET_DEFAULT_PATH = r"C:\Users\ezequ\Downloads\dataset-resized\dataset-resized"
 SPLITS_JSON_PATH = os.path.join(os.path.dirname(os.path.dirname(__file__)), "data", "splits.json")
 
-
+# Carrega as divisões do dataset caso já existam.
+# Caso contrário, percorre as pastas, identifica as imagens
+# e organiza seus caminhos, classes e rótulos numéricos.# Carrega as divisões do dataset caso já existam.
+# Caso contrário, percorre as pastas, identifica as imagens
+# e organiza seus caminhos, classes e rótulos numéricos.
 def create_or_load_splits(dataset_dir=DATASET_DEFAULT_PATH, splits_file=SPLITS_JSON_PATH, seed=42):
     # se ja tiver o json gerado, carrega direto pra nao mudar os conjuntos
     if os.path.exists(splits_file):
